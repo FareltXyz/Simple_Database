@@ -2,6 +2,7 @@
 Status Building..
 
 **How to Use Database?**
+
 *Clone*
 ```shell
 git clone https://github.com/Testerbens/Simple_Database
@@ -11,6 +12,7 @@ git clone https://github.com/Testerbens/Simple_Database
 const database = require('./Simple_Database/index.js')
 ```
 **Function**
+
 *Create & set*
 ```javascript
 database.set('key', 'value', './data.json')
