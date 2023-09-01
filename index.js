@@ -20,3 +20,8 @@ function get(key, file) {
  const jason = JSON.parse(fs.readFileSync(file).toString())
 return jason[key]
 }
+
+module.exports = {
+   get,
+   create
+}
