@@ -5,7 +5,7 @@
 
 *Clone*
 ```shell
-git clone https://github.com/Testerbens/Simple_Database
+git clone https://github.com/yujiZky/Simple_Database
 ```
 *Use*
 ```javascript
