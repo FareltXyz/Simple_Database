@@ -43,12 +43,12 @@ function del(name, file) {
 delete jason[name];
 fs.writeFileSync(file, JSON.stringify(jason));
 return "";
-  },
+}
   function all(file) {
      if(!file) return new Error("enter file path! Use: all('./data.json')")
      if(!fs.existsSync(file)) return new Error(" file not found ")
 return JSON.parse(fs.readFileSync(file, "utf8"));
-  },
+  } 
 
   function has(name, file) {
      if(!name) return new Error("enter key name! Use: has('key', './data')")
