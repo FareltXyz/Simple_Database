@@ -35,7 +35,7 @@ function get(key, file) {
  const jason = JSON.parse(fs.readFileSync(file).toString())
 return jason[key]
 }
-function delete(name, file) {
+function del(name, file) {
    if(!name) return new Error("enter key name! Use: delete('key', 'data.json')")
    if(!file) return new Error("enter file path! Use: delete('key', './data.json')")
    if(!fs.existsSync(file)) new Error(" file not found ")
@@ -61,7 +61,7 @@ module.exports = {
    create,
    set,
    get,
-   delete,
+   del,
    all,
    has
 }
