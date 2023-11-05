@@ -26,7 +26,7 @@ database.get('key', './data.json')
 ```
 *delete*
 ```javascript
-database.delete('key', './data.json')
+database.del('key', './data.json')
 ```
 *has*
 ```javascript
@@ -38,4 +38,3 @@ database.has('key', './data.json')
 database.all('./data.json')
 // return all string in this file
 ```
-Malas ngerjain nya gw njir 🤓
