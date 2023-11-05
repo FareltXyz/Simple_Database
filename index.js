@@ -19,7 +19,7 @@ function set(key, value, file) {
    if(!value) return new Error("Invalid Value! Use: create('key', 'value', './data.json')")
    if(!file) return new Error("enter the file name! Use: create('key', 'value', './data.json')")
 if(!fs.existsSync(file)) {
-   fs.writeFileSync(file, "{}"
+   fs.writeFileSync(file, "{}")
   }
 const json = JSON.parse(fs.readFileSync(file).toString())
 json[key] = value;
